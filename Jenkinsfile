@@ -35,7 +35,7 @@ stage('ExecuteSoanrQubeReport')
 
    Thanks & Regards,
 
-   Hareesh''', subject: 'Build is over..!', to: 'n.hareesh44@gmail.com'
+   Hareesh''', subject: 'Build is over..!', to: 'satya01.nerella@gmail.com'
  }
  
 }
