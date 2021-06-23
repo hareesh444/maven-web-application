@@ -19,7 +19,7 @@ stages{
 
  stage('CheckoutCode'){
  steps{
-   git branch: 'development', credentialsId: '6a6dfb50-0907-46a0-9303-c9c87db27742', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
+    git branch: 'master', credentialsId: '65fb834f-a83b-4fe7-8e11-686245c47a65', url: 'https://github.com/MithunTechnologiesDevOps/maven-web-application.git'
  }
  }
  
@@ -43,7 +43,7 @@ stages{
  }
  stage('DeployAppIntoTomcatServer'){
   steps{
-   sshagent(['c00595ae-6d80-4938-a41e-cf3c55674816']) {
+   sshagent(['423b5b58-c0a3-42aa-af6e-f0affe1bad0c']) {
     sh "scp -o StrictHostKeyChecking=no target/maven-web-application.war ec2-user@54.172.132.208:/opt/apache-tomcat-9.0.48/webapps/"
    }
   }
